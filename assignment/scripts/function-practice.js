@@ -23,16 +23,19 @@ console.log(`Hello, ${helloName('Joe')}!` );
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber ) {
   // return firstNumber + secondNumber;
+  let addition = firstNumber + secondNumber;
+  return addition;
 }
-
+console.log(`Should add 3+3. Answer: ${addNumbers(3, 3)}`);
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( num1, num2, num3 ) {
+  let multiply = num1 * num2 * num3;
+  return multiply;
 }
-
+console.log(`Should multiply 3*3*3. Answer: ${multiplyThree(3, 3, 3)}`);
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise

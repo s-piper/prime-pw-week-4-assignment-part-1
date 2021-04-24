@@ -41,15 +41,22 @@ console.log(`Should multiply 3*3*3. Answer: ${multiplyThree(3, 3, 3)}`);
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
+  } else {
+
+    return false;
   }
-    return;
 }
+console.log(`Should return true. Answer: ${isPositive(1)}`);
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
+// Not sure if you mean just write another log for above and below sooooo that's what I did.
+console.log(`There are eggs in the fridge. ${isPositive(3)}`);
 console.log( 'isPositive - should say false', isPositive(0) );
+console.log(`There are bacon strips in the fridge. ${isPositive(0)}`);
 console.log( 'isPositive - should say false', isPositive(-3) );
+console.log(`There is a full 12 pack of Diet Coke. ${isPositive(-3)}`);
 
 
 // 6. Function to return the _last_ item in an array. If the

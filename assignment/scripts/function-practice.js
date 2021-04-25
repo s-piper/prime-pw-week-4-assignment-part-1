@@ -49,27 +49,42 @@ function isPositive( number ) {
 }
 console.log(`Should return true. Answer: ${isPositive(1)}`);
 // Call the function to test each outcome (true & false)
+isPositive(1);
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
 // Not sure if you mean just write another log for above and below sooooo that's what I did.
+isPositive(3);
 console.log(`There are eggs in the fridge. ${isPositive(3)}`);
+isPositive(0);
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log(`There are bacon strips in the fridge. ${isPositive(0)}`);
+isPositive(-3);
 console.log( 'isPositive - should say false', isPositive(-3) );
 console.log(`There is a full 12 pack of Diet Coke. ${isPositive(-3)}`);
 
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
+
+
 function getLast( array ) {
-
-}
-
+  console.log('in getLast');
+  array = ['pants', 'shirt', 'shoes'];
+  return array[array.length-1];
+}// end getLast array
+console.log(getLast());
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array ){
 
+let arrayColor = ['red', 'blue', 'green',];
+let i = 2;
+function find( value, arrayColor ){
+  console.log('in find');
+  for ( i = 2; i < arrayColor.length; i++) {
+    return true
+  }
+  console.log(find());
 }
 
 // ----------------------

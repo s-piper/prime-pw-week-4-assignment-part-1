@@ -124,8 +124,20 @@ console.log('Expect to equal 6. Answer:',sumAll([1, 2, 3]));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-
-
+function posOnly( array ){
+  let positive = array.filter(num => num > -1);
+  return positive;
+}
+console.log(posOnly([-5, -10, 12, 1, -3, 5]));
+console.log(posOnly([-1,-2,-3,-4]));
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+//Power Calculator.  It takes voltage and current to return the calculated power in watts.
+
+function circuitPower(voltage, current){
+  watts = voltage * current;
+  return watts
+}
+console.log(circuitPower(900, 10), 'watts');

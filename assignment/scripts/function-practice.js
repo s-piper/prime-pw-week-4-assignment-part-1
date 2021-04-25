@@ -78,14 +78,20 @@ console.log(getLast());
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
 let arrayColor = ['red', 'blue', 'green',];
-let i = 2;
-function find( value, arrayColor ){
+function find( value, array){
   console.log('in find');
-  for ( i = 2; i < arrayColor.length; i++) {
-    return true
+  for ( let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+    if (array[i] !== value) {
+      return false;
+    }
   }
-  console.log(find());
 }
+console.log('Finding color red, expecting true:', find('red', arrayColor));
+console.log('Finding color purple, expecting false:', find('purple', arrayColor));
+
 
 // ----------------------
 // Stretch Goals

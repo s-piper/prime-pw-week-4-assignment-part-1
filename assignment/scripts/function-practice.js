@@ -83,13 +83,12 @@ function find( value, array){
     if (array[i] === value) {
       return true;
     }
-    if (array[i] !== value) {
-      return false;
-    }
-  }
+  } return false;
 }
 console.log('Finding color red, expecting true:', find('red', arrayColor));
 console.log('Finding color purple, expecting false:', find('purple', arrayColor));
+console.log('Finding color blue, expecting true:', find('blue', arrayColor));
+console.log('Finding color green, expecting true', find('green', arrayColor));
 
 
 // ----------------------

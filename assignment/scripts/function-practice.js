@@ -15,10 +15,9 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, for example 'Hello, Jo!'
 function helloName( name ) {
-  let customNa = name
-  return customNa;
+  return `Hello, ${name}!`
 }
-console.log(`Hello, ${helloName('Joe')}!` );
+console.log(helloName('Jo'));
 // Remember to call the function to test
 
 
@@ -136,8 +135,9 @@ console.log(posOnly([-1,-2,-3,-4]));
 
 //Power Calculator.  It takes voltage and current to return the calculated power in watts.
 
-function circuitPower(voltage, current){
-  watts = voltage * current;
-  return watts
-}
-console.log(circuitPower(900, 10), 'watts');
+// function circuitPower(voltage, current){
+//   watts = voltage * current;
+//   return watts
+// }
+// console.log(circuitPower(900, 10), 'watts');
+//
